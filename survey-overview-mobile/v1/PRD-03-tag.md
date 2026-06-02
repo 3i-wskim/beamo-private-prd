@@ -78,6 +78,10 @@
 
 ### 업로드 큐 상태
 
+> 📐 **Figma**
+> - [업로드 큐 상태 UI](https://www.figma.com/design/naQibXTH7BGLmAw7hKuErb/App3.0--current-?node-id=11161-27032&t=UJZWNsz97eIDOxfK-4)
+> - [업로드 큐 상태 UI (상세)](https://www.figma.com/design/naQibXTH7BGLmAw7hKuErb/App3.0--current-?node-id=11161-27253&t=UJZWNsz97eIDOxfK-4)
+
 | 상태 | UI (점 세 개 메뉴 위치) | 비고 |
 |------|----------------------|------|
 | ⏳ **Pending** | 클라우드-싱크 아이콘 | 큐 대기 |
