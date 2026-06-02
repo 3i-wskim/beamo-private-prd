@@ -13,16 +13,20 @@ beamo-private-prd/
 │   ├── sprint-lifecycle.md         ← 스프린트 라이프사이클 (워킹데이→블로커→다음사이클)
 │   └── role-rules.md               ← 역할별 룰 (기획자/개발자/디자이너/회의주관자)
 └── survey-overview-mobile/          ← 도메인별 PRD
-    └── v1/                          ← 버전별 폴더
-        ├── PRD-01-canvas.md
-        ├── PRD-02-sheet-scaffold.md
-        ├── PRD-03-tag.md
-        ├── PRD-04-comment.md
-        ├── PRD-05-box-checklist.md
-        ├── PRD-06-actions.md
-        ├── PRD-07-offline.md
-        ├── PRD-QnA.md
-        └── PRD-QnA-dev.md
+    ├── v1/                          ← PRD 버전별 폴더
+    │   ├── PRD-01-canvas.md
+    │   ├── PRD-02-sheet-scaffold.md
+    │   ├── PRD-03-tag.md
+    │   ├── PRD-04-comment.md
+    │   ├── PRD-05-box-checklist.md
+    │   ├── PRD-06-actions.md
+    │   ├── PRD-07-offline.md
+    │   ├── PRD-QnA.md
+    │   └── PRD-QnA-dev.md
+    └── qna/                         ← 수시 자유 질의응답 (PRD 외)
+        ├── qna-planning.md          ← 기획 QnA
+        ├── qna-design.md            ← 디자인 QnA
+        └── qna-development.md       ← 개발 QnA
 ```
 
 ## Conventions
@@ -36,3 +40,10 @@ beamo-private-prd/
 - **v1**: 각 작업자가 독립적으로 AI로 PRD 작성 → 통합 리뷰 회의 → 확정
 - **v2+**: 워킹데이 중 블로커 발생 → 논의/반영 → PRD 갱신
 - 상세: `guides/ai-pipeline-guide.md` 참조
+
+## QnA (자유 질의응답)
+
+- PRD에 직접 영향을 미치지 않는 **수시 소통 채널**
+- 기획/디자인/개발 3개 채널로 분리
+- 작성 형식: 작성자, 작성일, 질문 → 답변자, 답변일, 답변
+- 유의미한 주제는 **ADR로 승격** 가능
