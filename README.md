@@ -13,15 +13,16 @@ beamo-private-prd/
 │   ├── sprint-lifecycle.md         ← 스프린트 라이프사이클 (워킹데이→블로커→다음사이클)
 │   └── role-rules.md               ← 역할별 룰 (기획자/개발자/디자이너/회의주관자)
 └── survey-overview-mobile/          ← 도메인별 PRD
-    ├── PRD-01-canvas.md
-    ├── PRD-02-sheet-scaffold.md
-    ├── PRD-03-tag.md
-    ├── PRD-04-comment.md
-    ├── PRD-05-box-checklist.md
-    ├── PRD-06-actions.md
-    ├── PRD-07-offline.md
-    ├── PRD-QnA.md
-    └── PRD-QnA-dev.md
+    └── v1/                          ← 버전별 폴더
+        ├── PRD-01-canvas.md
+        ├── PRD-02-sheet-scaffold.md
+        ├── PRD-03-tag.md
+        ├── PRD-04-comment.md
+        ├── PRD-05-box-checklist.md
+        ├── PRD-06-actions.md
+        ├── PRD-07-offline.md
+        ├── PRD-QnA.md
+        └── PRD-QnA-dev.md
 ```
 
 ## Conventions
