@@ -60,7 +60,14 @@
   - SO-13 FR-18: pending → Edit/Delete 가능, failed → Retry/Delete만
 - ⚠️ **Edit/Delete 가능 여부는 spec-review #7에서 해소** (Pending=Edit/Delete, Failed=Retry/Delete). 표시 필드만 확인 필요.
 
-**답변:** (미답변)
+**답변:** (PM 답변, 2026-06-05)
+
+업로드 대기(PENDING/UPLOADING) 상태의 태그·코멘트를 캔버스에서 탭했을 때:
+
+- **표시 필드**: 로컬에 저장된 모든 필드를 전부 표시한다. 타이틀, 설명, 미디어(로컬 파일 경로 기반 썸네일), 카테고리 — 전부 표시. 서버 ID가 없어도 로컬 데이터만으로 디테일 뷰를 구성하는 데 지장이 없다.
+- **미디어**: 아직 서버에 업로드되지 않은 미디어는 로컬 파일 경로로 표시한다. 업로드 완료 전이라 서버 URL이 없으므로, 로컬 URI를 Coil로 로드하면 충분하다.
+- **Edit/Delete 권한**: spec-review #7 확정 내용 그대로. PENDING은 Edit/Delete 모두 가능, FAILED는 Retry/Delete만 가능.
+- **디테일 뷰의 큐 상태 표시**: 디테일 뷰 헤더에 "업로드 대기 중" 배지를 작게 표시하는 것을 권장한다(디자인 결정). 상태가 SUCCEEDED로 전환되면 배지는 자동으로 사라지고 서버 ID 기반 정상 아이템으로 전환된다.
 
 ---
 
